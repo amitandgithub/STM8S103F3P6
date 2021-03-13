@@ -11,7 +11,8 @@
 
 uint32_t TIM1Ticks,TIM2Ticks;
 
-//interrupt<30> SystemInterrupts;
+TestGPIO_t TestGPIO;
+TestLED_t TestLED;
 
 uint8_t WaitOnFlag(volatile uint8_t* reg, uint8_t bitmask, uint8_t status, uint16_t timeout) // 35(0x25)bytes
 {
