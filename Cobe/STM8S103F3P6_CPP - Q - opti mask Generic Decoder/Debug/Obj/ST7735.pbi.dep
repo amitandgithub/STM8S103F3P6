@@ -1,0 +1,5 @@
+ST7735.pbi: \
+  C:\Amit_Chaudhary\STM8\STM8L101\code\STM8L101F3_FW\STM8L101F3P6_CPP\ -\ GpioSync\HW_Modules\ST77xx\ST7735.cpp \
+  C:\Amit_Chaudhary\STM8\STM8L101\code\STM8L101F3_FW\STM8L101F3P6_CPP\ -\ GpioSync\HW_Modules\ST77xx/ST7735.h \
+  C:\Amit_Chaudhary\STM8\STM8L101\code\STM8L101F3_FW\STM8L101F3P6_CPP\ -\ GpioSync\drivers\SPI\Spi.h \
+  C:\Amit_Chaudhary\STM8\STM8L101\code\STM8L101F3_FW\STM8L101F3P6_CPP\ -\ GpioSync\STM8L10x_StdPeriph_Driver\inc\stm8l10x_spi.h
