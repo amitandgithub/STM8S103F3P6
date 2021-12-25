@@ -1,0 +1,866 @@
+###############################################################################
+#
+# IAR ELF Linker V3.11.1.207 for STM8                     21/Sep/2021  11:13:35
+# Copyright 2010-2019 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving
+#        toSTM8L151G6U6\IDE\Debug\Exe\STM8S103F3P6_CPP.out
+#    Map file     =  
+#        C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving
+#        toSTM8L151G6U6\IDE\Debug\List\STM8S103F3P6_CPP.map
+#    Command line =  
+#        -f C:\Users\AMITCH~1\AppData\Local\Temp\EWBC5D.tmp
+#        ("C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving
+#        toSTM8L151G6U6\IDE\Debug\Obj\fonts.o"
+#        "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving
+#        toSTM8L151G6U6\IDE\Debug\Obj\gpio_tests.o"
+#        "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving
+#        toSTM8L151G6U6\IDE\Debug\Obj\HAL_Objects.o"
+#        "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving
+#        toSTM8L151G6U6\IDE\Debug\Obj\main.o"
+#        "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving
+#        toSTM8L151G6U6\IDE\Debug\Obj\RTF.o"
+#        "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving
+#        toSTM8L151G6U6\IDE\Debug\Obj\stm8s_adc1.o"
+#        "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving
+#        toSTM8L151G6U6\IDE\Debug\Obj\stm8s_i2c.o"
+#        "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving
+#        toSTM8L151G6U6\IDE\Debug\Obj\stm8s_it.o"
+#        "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving
+#        toSTM8L151G6U6\IDE\Debug\Obj\stm8s_spi.o"
+#        "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving
+#        toSTM8L151G6U6\IDE\Debug\Obj\stm8s_tim1.o"
+#        "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving
+#        toSTM8L151G6U6\IDE\Debug\Obj\stm8s_tim2.o"
+#        "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving
+#        toSTM8L151G6U6\IDE\Debug\Obj\system.o"
+#        "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving
+#        toSTM8L151G6U6\IDE\Debug\Obj\timers_test.o" --redirect
+#        _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --no_out_extension -o
+#        "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving
+#        toSTM8L151G6U6\IDE\Debug\Exe\STM8S103F3P6_CPP.out" --map
+#        "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving
+#        toSTM8L151G6U6\IDE\Debug\List\STM8S103F3P6_CPP.map" --config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.3\stm8\config\lnkstm8s103f3.icf" --config_def _CSTACK_SIZE=0x100
+#        --config_def _HEAP_SIZE=0x100 --entry __iar_program_start --debug_lib)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+__SystemLibrary            = DLib
+__code_model               = small
+__core                     = stm8
+__data_model               = medium
+__dlib_file_descriptor     = 0
+__dlib_full_locale_support = 0
+__rt_version               = 4
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at start of [0x000000-0x0000ff] { rw section .vregs };
+"A1":  place at end of [0x000000-0x0003ff] { block CSTACK };
+"P2":  place in [from 0x000000 to 0x0003ff] {
+          block HEAP, rw section __DLIB_PERTHREAD, rw section .far.bss,
+          rw section .far.data, rw section .far.noinit,
+          rw section .far_func.textrw, rw section .huge.bss,
+          rw section .huge.data, rw section .huge.noinit,
+          rw section .huge_func.textrw, rw section .iar.dynexit,
+          rw section .near.bss, rw section .near.data, rw section .near.noinit,
+          rw section .near_func.textrw };
+"A2":  place at start of [0x008000-0x009fff] { block INTVEC };
+"P3":  place in [from 0x008000 to 0x009fff] {
+          ro section __DLIB_PERTHREAD_init, ro section .far.data_init,
+          ro section .far_func.textrw_init, ro section .huge.data_init,
+          ro section .huge_func.textrw_init, ro section .iar.init_table,
+          ro section .init_array, ro section .near.data_init,
+          ro section .near.rodata, ro section .near_func.text,
+          ro section .near_func.textrw_init, ro section .tiny.data_init,
+          ro section .tiny.rodata_init };
+"P4":  place in [from 0x008000 to 0x009fff] {
+          ro section .far.rodata, ro section .far_func.text };
+"P5":  place in [from 0x008000 to 0x009fff] {
+          ro section .huge.rodata, ro section .huge_func.text };
+do not initialize {
+   rw section .eeprom.noinit, rw section .far.noinit, rw section .huge.noinit,
+   rw section .near.noinit, rw section .tiny.noinit, rw section .vregs };
+initialize by copy {
+   rw section .far.bss, rw section .far.data, rw section .far_func.textrw,
+   rw section .huge.bss, rw section .huge.data, rw section .huge_func.textrw,
+   rw section .iar.dynexit, rw section .near.bss, rw section .near.data,
+   rw section .near_func.textrw, rw section .tiny.bss, rw section .tiny.data,
+   ro section .tiny.rodata };
+
+No sections matched the following patterns:
+
+  ro section .far.data_init          in "P3-P5"
+  ro section .far.rodata             in "P3-P5"
+  ro section .far_func.text          in "P3-P5"
+  ro section .far_func.textrw_init   in "P3-P5"
+  ro section .huge.data_init         in "P3-P5"
+  ro section .huge.rodata            in "P3-P5"
+  ro section .huge_func.text         in "P3-P5"
+  ro section .huge_func.textrw_init  in "P3-P5"
+  ro section .iar.init_table         in "P3-P5"
+  ro section .near_func.textrw_init  in "P3-P5"
+  ro section .tiny.data_init         in "P3-P5"
+  ro section .tiny.rodata_init       in "P3-P5"
+  ro section __DLIB_PERTHREAD_init   in "P3-P5"
+  rw section .far.bss                in "P2"
+  rw section .far.data               in "P2"
+  rw section .far.noinit             in "P2"
+  rw section .far_func.textrw        in "P2"
+  rw section .huge.bss               in "P2"
+  rw section .huge.data              in "P2"
+  rw section .huge.noinit            in "P2"
+  rw section .huge_func.textrw       in "P2"
+  rw section .iar.dynexit            in "P2"
+  rw section .near.noinit            in "P2"
+  rw section .near_func.textrw       in "P2"
+  rw section .tiny.bss               in "P1"
+  rw section .tiny.data              in "P1"
+  rw section .tiny.noinit            in "P1"
+  rw section .tiny.rodata            in "P1"
+  rw section __DLIB_PERTHREAD        in "P2"
+  section .eeprom.data               in "P6-P8"
+  section .eeprom.noinit             in "P6-P8"
+  section .eeprom.rodata             in "P6-P8"
+
+
+  Section             Kind      Address    Size  Object
+  -------             ----      -------    ----  ------
+"A0":                                      0x10
+  .vregs              uninit   0x000000    0x10  vregs.o [4]
+                             - 0x000010    0x10
+
+"P2", part 1 of 2:                         0x12
+  P2-1                         0x000010    0x12  <Init block>
+    .near.data        inited   0x000010     0x1  main.o [1]
+    .near.data        inited   0x000011     0x1  main.o [1]
+    .near.data        inited   0x000012    0x10  main.o [1]
+                             - 0x000022    0x12
+
+"P2", part 2 of 2:                         0xb5
+  .near.bss           zero     0x000022    0x47  HAL_Objects.o [1]
+  .near.bss           zero     0x000069    0x3a  main.o [1]
+  .near.bss           zero     0x0000a3     0xc  main.o [1]
+  .near.bss           zero     0x0000af     0xb  main.o [1]
+  .near.bss           zero     0x0000ba     0x4  main.o [1]
+  .near.bss           zero     0x0000be     0x2  main.o [1]
+  .near.bss           zero     0x0000c0     0x2  main.o [1]
+  .near.bss           zero     0x0000c2     0x2  main.o [1]
+  .near.bss           zero     0x0000c4     0x2  main.o [1]
+  .near.bss           zero     0x0000c6     0x2  main.o [1]
+  .near.bss           zero     0x0000c8     0x2  main.o [1]
+  .near.bss           zero     0x0000ca     0x2  main.o [1]
+  .near.bss           zero     0x0000cc     0x2  stm8s_it.o [1]
+  .near.bss           zero     0x0000ce     0x1  main.o [1]
+  .near.bss           zero     0x0000cf     0x1  main.o [1]
+  .near.bss           zero     0x0000d0     0x1  main.o [1]
+  .near.bss           zero     0x0000d1     0x1  main.o [1]
+  .near.bss           zero     0x0000d2     0x1  main.o [1]
+  .near.bss           zero     0x0000d3     0x1  main.o [1]
+  .near.bss           zero     0x0000d4     0x1  main.o [1]
+  .near.bss           zero     0x0000d5     0x1  stm8s_it.o [1]
+  .near.bss           zero     0x0000d6     0x1  stm8s_it.o [1]
+                             - 0x0000d7    0xb5
+
+"A1":                                     0x100
+  CSTACK                       0x000300   0x100  <Block>
+    CSTACK            uninit   0x000300   0x100  <Block tail>
+                             - 0x000400   0x100
+
+"A2":                                      0x80
+  INTVEC                       0x008000    0x80  <Block>
+    .intvec           const    0x008000    0x80  interrupt.o [4]
+                             - 0x008080    0x80
+
+"P3-P5":                                 0x1bbb
+  .near_func.text     ro code  0x008080   0x3fc  float.o [4]
+  .near_func.text     ro code  0x00847c   0x1ef  stm8s_i2c.o [1]
+  .near_func.text     ro code  0x00866b   0x189  main.o [1]
+  .near_func.text     ro code  0x0087f4   0x17c  main.o [1]
+  .near_func.text     ro code  0x008970   0x13d  vreg_util.o [4]
+  .near_func.text     ro code  0x008aad   0x110  long.o [4]
+  .near_func.text     ro code  0x008bbd    0xdf  main.o [1]
+  .near_func.text     ro code  0x008c9c    0xa1  main.o [1]
+  .near_func.text     ro code  0x008d3d    0x9a  main.o [1]
+  .near_func.text     ro code  0x008dd7    0x98  main.o [1]
+  .near_func.text     ro code  0x008e6f    0x96  main.o [1]
+  .near_func.text     ro code  0x008f05    0x8f  timers_test.o [1]
+  .near_func.text     ro code  0x008f94    0x8a  main.o [1]
+  .near.rodata        const    0x00901e    0x78  stm8s_i2c.o [1]
+  .near_func.text     ro code  0x009096    0x73  main.o [1]
+  .near_func.text     ro code  0x009109    0x72  main.o [1]
+  .near_func.text     ro code  0x00917b    0x67  main.o [1]
+  .near_func.text     ro code  0x0091e2    0x64  main.o [1]
+  .near_func.text     ro code  0x009246    0x5f  main.o [1]
+  .near_func.text     ro code  0x0092a5    0x4f  short.o [4]
+  .near_func.text     ro code  0x0092f4    0x48  main.o [1]
+  .near_func.text     ro code  0x00933c    0x46  main.o [1]
+  .near_func.text     ro code  0x009382    0x46  main.o [1]
+  .near_func.text     ro code  0x0093c8    0x46  main.o [1]
+  .near_func.text     ro code  0x00940e    0x45  main.o [1]
+  .near_func.text     ro code  0x009453    0x45  stm8s_i2c.o [1]
+  .near_func.text     ro code  0x009498    0x44  main.o [1]
+  .near_func.text     ro code  0x0094dc    0x40  main.o [1]
+  .near_func.text     ro code  0x00951c    0x38  main.o [1]
+  .near_func.text     ro code  0x009554    0x37  main.o [1]
+  .near_func.text     ro code  0x00958b    0x36  main.o [1]
+  .near_func.text     ro code  0x0095c1    0x36  long_util.o [4]
+  .near_func.text     ro code  0x0095f7    0x33  main.o [1]
+  .near_func.text     ro code  0x00962a    0x33  main.o [1]
+  .near_func.text     ro code  0x00965d    0x32  main.o [1]
+  .near_func.text     ro code  0x00968f    0x31  main.o [1]
+  .near_func.text     ro code  0x0096c0    0x31  main.o [1]
+  .near_func.text     ro code  0x0096f1    0x2e  main.o [1]
+  .near_func.text     ro code  0x00971f    0x2c  main.o [1]
+  .near_func.text     ro code  0x00974b    0x2a  main.o [1]
+  .near_func.text     ro code  0x009775    0x29  main.o [1]
+  .near_func.text     ro code  0x00979e    0x28  main.o [1]
+  .near_func.text     ro code  0x0097c6    0x28  init_small.o [4]
+  .near_func.text     ro code  0x0097ee    0x25  system.o [1]
+  .near_func.text     ro code  0x009813    0x23  main.o [1]
+  .near_func.text     ro code  0x009836    0x23  main.o [1]
+  .iar.init_table     const    0x009859    0x12  - Linker created -
+  .near_func.text     ro code  0x00986b    0x20  main.o [1]
+  .near_func.text     ro code  0x00988b    0x1e  init_small.o [4]
+  .near_func.text     ro code  0x0098a9    0x1d  main.o [1]
+  .near_func.text     ro code  0x0098c6    0x1d  cstartup.o [4]
+  .near_func.text     ro code  0x0098e3    0x1d  cppinit.o [4]
+  .near_func.text     ro code  0x009900    0x1c  timers_test.o [1]
+  .near_func.text     ro code  0x00991c    0x1a  system.o [1]
+  .near_func.text     ro code  0x009936    0x19  main.o [1]
+  .near_func.text     ro code  0x00994f    0x19  main.o [1]
+  .near_func.text     ro code  0x009968    0x19  stm8s_it.o [1]
+  .near_func.text     ro code  0x009981    0x18  dc_util.o [4]
+  .near_func.text     ro code  0x009999    0x17  system.o [1]
+  .near_func.text     ro code  0x0099b0    0x16  stm8s_it.o [1]
+  .near_func.text     ro code  0x0099c6    0x16  memset.o [4]
+  .near_func.text     ro code  0x0099dc    0x15  main.o [1]
+  .near_func.text     ro code  0x0099f1    0x15  stm8s_it.o [1]
+  .near_func.text     ro code  0x009a06    0x14  init.o [4]
+  .near_func.text     ro code  0x009a1a    0x14  __dbg_xxexit.o [3]
+  .near_func.text     ro code  0x009a2e    0x13  main.o [1]
+  .near_func.text     ro code  0x009a41    0x13  main.o [1]
+  Initializer bytes   const    0x009a54    0x12  <for P2-1>
+  .near_func.text     ro code  0x009a66    0x11  main.o [1]
+  .near_func.text     ro code  0x009a77    0x10  main.o [1]
+  .near_func.text     ro code  0x009a87     0xf  HAL_Objects.o [1]
+  .near_func.text     ro code  0x009a96     0xf  main.o [1]
+  .near_func.text     ro code  0x009aa5     0xe  main.o [1]
+  .near_func.text     ro code  0x009ab3     0xe  main.o [1]
+  .near.rodata        const    0x009ac1     0xd  main.o [1]
+  .near_func.text     ro code  0x009ace     0xd  main.o [1]
+  .near_func.text     ro code  0x009adb     0xd  main.o [1]
+  .near_func.text     ro code  0x009ae8     0xd  main.o [1]
+  .near_func.text     ro code  0x009af5     0xc  main.o [1]
+  .near_func.text     ro code  0x009b01     0xc  stm8s_it.o [1]
+  .near_func.text     ro code  0x009b0d     0xb  HAL_Objects.o [1]
+  .near_func.text     ro code  0x009b18     0xb  main.o [1]
+  .near_func.text     ro code  0x009b23     0xb  main.o [1]
+  .near_func.text     ro code  0x009b2e     0xb  main.o [1]
+  .near_func.text     ro code  0x009b39     0xb  main.o [1]
+  .near_func.text     ro code  0x009b44     0xb  stm8s_it.o [1]
+  .near_func.text     ro code  0x009b4f     0xb  stm8s_it.o [1]
+  .near_func.text     ro code  0x009b5a     0xb  stm8s_it.o [1]
+  .near_func.text     ro code  0x009b65     0x9  main.o [1]
+  .near_func.text     ro code  0x009b6e     0x9  main.o [1]
+  .near_func.text     ro code  0x009b77     0x9  stm8s_it.o [1]
+  .near_func.text     ro code  0x009b80     0x9  stm8s_it.o [1]
+  .near_func.text     ro code  0x009b89     0x9  stm8s_it.o [1]
+  .near_func.text     ro code  0x009b92     0x8  main.o [1]
+  .near_func.text     ro code  0x009b9a     0x7  HAL_Objects.o [1]
+  .near_func.text     ro code  0x009ba1     0x7  main.o [1]
+  .near_func.text     ro code  0x009ba8     0x6  char.o [4]
+  .near_func.text     ro code  0x009bae     0x5  main.o [1]
+  .near_func.text     ro code  0x009bb3     0x5  main.o [1]
+  .near_func.text     ro code  0x009bb8     0x5  main.o [1]
+  .near_func.text     ro code  0x009bbd     0x5  main.o [1]
+  .near_func.text     ro code  0x009bc2     0x5  main.o [1]
+  .near_func.text     ro code  0x009bc7     0x5  main.o [1]
+  .near_func.text     ro code  0x009bcc     0x5  main.o [1]
+  .near_func.text     ro code  0x009bd1     0x5  main.o [1]
+  .near_func.text     ro code  0x009bd6     0x5  main.o [1]
+  .near_func.text     ro code  0x009bdb     0x5  main.o [1]
+  .near_func.text     ro code  0x009be0     0x5  stm8s_it.o [1]
+  .near_func.text     ro code  0x009be5     0x5  timers_test.o [1]
+  .near_func.text     ro code  0x009bea     0x5  timers_test.o [1]
+  .near_func.text     ro code  0x009bef     0x5  timers_test.o [1]
+  .near_func.text     ro code  0x009bf4     0x5  cexit.o [4]
+  .near_func.text     ro code  0x009bf9     0x4  main.o [1]
+  .near_func.text     ro code  0x009bfd     0x4  main.o [1]
+  .near_func.text     ro code  0x009c01     0x4  main.o [1]
+  .near_func.text     ro code  0x009c05     0x4  main.o [1]
+  .near_func.text     ro code  0x009c09     0x4  main.o [1]
+  SHT$$PREINIT_ARRAY           0x009c0d     0x0  <Block>
+  SHT$$INIT_ARRAY              0x009c0d     0x4  <Block>
+    .difunct          const    0x009c0d     0x2  HAL_Objects.o [1]
+    .difunct          const    0x009c0f     0x2  main.o [1]
+  .near.rodata        const    0x009c11     0x3  main.o [1]
+  .near.rodata        const    0x009c14     0x3  main.o [1]
+  .near.rodata        const    0x009c17     0x3  main.o [1]
+  .near_func.text     ro code  0x009c1a     0x3  interrupt.o [4]
+  .near_func.text     ro code  0x009c1d     0x3  low_level_init.o [4]
+  .near_func.text     ro code  0x009c20     0x3  exit.o [4]
+  .near_func.text     ro code  0x009c23     0x3  unhandled_exception.o [4]
+  .near_func.text     ro code  0x009c26     0x2  main.o [1]
+  .near_func.text     ro code  0x009c28     0x1  stm8s_it.o [1]
+  .near_func.text     ro code  0x009c29     0x1  stm8s_it.o [1]
+  .near_func.text     ro code  0x009c2a     0x1  stm8s_it.o [1]
+  .near_func.text     ro code  0x009c2b     0x1  stm8s_it.o [1]
+  .near_func.text     ro code  0x009c2c     0x1  stm8s_it.o [1]
+  .near_func.text     ro code  0x009c2d     0x1  stm8s_it.o [1]
+  .near_func.text     ro code  0x009c2e     0x1  stm8s_it.o [1]
+  .near_func.text     ro code  0x009c2f     0x1  stm8s_it.o [1]
+  .near_func.text     ro code  0x009c30     0x1  stm8s_it.o [1]
+  .near_func.text     ro code  0x009c31     0x1  stm8s_it.o [1]
+  .near_func.text     ro code  0x009c32     0x1  stm8s_it.o [1]
+  .near_func.text     ro code  0x009c33     0x1  stm8s_it.o [1]
+  .near_func.text     ro code  0x009c34     0x1  stm8s_it.o [1]
+  .near_func.text     ro code  0x009c35     0x1  stm8s_it.o [1]
+  .near_func.text     ro code  0x009c36     0x1  stm8s_it.o [1]
+  .near_func.text     ro code  0x009c37     0x1  stm8s_it.o [1]
+  .near_func.text     ro code  0x009c38     0x1  stm8s_it.o [1]
+  .near_func.text     ro code  0x009c39     0x1  stm8s_it.o [1]
+  .near_func.text     ro code  0x009c3a     0x1  __dbg_break.o [3]
+                             - 0x009c3b  0x1bbb
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address   Size
+          -------   ----
+Zero (__iar_zero_init2)
+    1 destination range, total size 0xb5:
+          0x000022  0xb5
+
+Copy (__iar_copy_init2)
+    1 source range, total size 0x12:
+          0x009a54  0x12
+    1 destination range, total size 0x12:
+          0x000010  0x12
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data
+    ------                 -------  -------  -------
+C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving toSTM8L151G6U6\IDE\Debug\Obj: [1]
+    HAL_Objects.o               33        2       71
+    main.o                   3 905       42      124
+    stm8s_i2c.o                564      120
+    stm8s_it.o                 163                 4
+    system.o                    86
+    timers_test.o              186
+    ------------------------------------------------
+    Total:                   4 937      164      199
+
+command line: [2]
+    ------------------------------------------------
+    Total:
+
+dbgstm8smd.a: [3]
+    __dbg_break.o                1
+    __dbg_xxexit.o              20
+    ------------------------------------------------
+    Total:                      21
+
+dlstm8smn.a: [4]
+    cexit.o                      5
+    char.o                       6
+    cppinit.o                   29
+    cstartup.o                  29
+    dc_util.o                   24
+    exit.o                       3
+    float.o                  1 020
+    init.o                      20
+    init_small.o                70
+    interrupt.o                  3      128
+    long.o                     272
+    long_util.o                 54
+    low_level_init.o             3
+    memset.o                    22
+    short.o                     79
+    unhandled_exception.o        3
+    vreg_util.o                317
+    vregs.o                                       16
+    ------------------------------------------------
+    Total:                   1 959      128       16
+
+    Linker created                       18      256
+----------------------------------------------------
+    Grand Total:             6 917      310      471
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                    Address   Size  Type      Object
+-----                    -------   ----  ----      ------
+.iar.init_table$$Base   0x009859          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00986b          --   Gb  - Linker created -
+??call_ctors            0x0098d3         Code  Gb  cstartup.o [4]
+?b0                     0x000000         Data  Gb  vregs.o [4]
+?b1                     0x000001         Data  Gb  vregs.o [4]
+?b10                    0x00000a         Data  Gb  vregs.o [4]
+?b11                    0x00000b         Data  Gb  vregs.o [4]
+?b12                    0x00000c         Data  Gb  vregs.o [4]
+?b13                    0x00000d         Data  Gb  vregs.o [4]
+?b14                    0x00000e         Data  Gb  vregs.o [4]
+?b15                    0x00000f         Data  Gb  vregs.o [4]
+?b2                     0x000002         Data  Gb  vregs.o [4]
+?b3                     0x000003         Data  Gb  vregs.o [4]
+?b4                     0x000004         Data  Gb  vregs.o [4]
+?b5                     0x000005         Data  Gb  vregs.o [4]
+?b6                     0x000006         Data  Gb  vregs.o [4]
+?b7                     0x000007         Data  Gb  vregs.o [4]
+?b8                     0x000008         Data  Gb  vregs.o [4]
+?b9                     0x000009         Data  Gb  vregs.o [4]
+?dc32_l1                0x009981         Code  Gb  dc_util.o [4]
+?dc32_px                0x00998e         Code  Gb  dc_util.o [4]
+?e0                     0x000001         Data  Gb  vregs.o [4]
+?e1                     0x000005         Data  Gb  vregs.o [4]
+?e2                     0x000009         Data  Gb  vregs.o [4]
+?e3                     0x00000d         Data  Gb  vregs.o [4]
+?epilogue_l2            0x008a17         Code  Gb  vreg_util.o [4]
+?epilogue_l2_l3         0x008a14         Code  Gb  vreg_util.o [4]
+?epilogue_l2_w6         0x008a1b         Code  Gb  vreg_util.o [4]
+?epilogue_w4            0x008a22         Code  Gb  vreg_util.o [4]
+?fadd32_l0_l0_0x        0x0080a3         Code  Gb  float.o [4]
+?fadd32_l0_l0_l1        0x0080a6         Code  Gb  float.o [4]
+?fcastf32s16_l0_x       0x00832b         Code  Gb  float.o [4]
+?fcasts16f32_x_l0       0x00834e         Code  Gb  float.o [4]
+?fcmpge32_c_l0_0x       0x0082cc         Code  Gb  float.o [4]
+?fcmpge32_c_l0_dc32     0x0082c7         Code  Gb  float.o [4]
+?fcmplt32_c_l0_0x       0x0082d5         Code  Gb  float.o [4]
+?fcmplt32_c_l0_dc32     0x0082d0         Code  Gb  float.o [4]
+?fdiv32_l0_l0_dc32      0x008214         Code  Gb  float.o [4]
+?fdiv32_l0_l0_l1        0x008219         Code  Gb  float.o [4]
+?fmul32_l0_l0_dc32      0x008174         Code  Gb  float.o [4]
+?fmul32_l0_l0_l1        0x008179         Code  Gb  float.o [4]
+?fsub32_l0_l0_l1        0x00809d         Code  Gb  float.o [4]
+?l0                     0x000000         Data  Gb  vregs.o [4]
+?l1                     0x000004         Data  Gb  vregs.o [4]
+?l2                     0x000008         Data  Gb  vregs.o [4]
+?l3                     0x00000c         Data  Gb  vregs.o [4]
+?load32_0x_l0           0x0095e9         Code  Gb  long_util.o [4]
+?load32_l0_0x           0x0095d1         Code  Gb  long_util.o [4]
+?load32_l0_asp          0x0095c6         Code  Gb  long_util.o [4]
+?load32_l0_dbsp         0x0095c1         Code  Gb  long_util.o [4]
+?load32_l0_xsp          0x0095c8         Code  Gb  long_util.o [4]
+?load32_l1_0x           0x0095dd         Code  Gb  long_util.o [4]
+?mov_e0_e1              0x008a6f         Code  Gb  vreg_util.o [4]
+?mov_e0_e2              0x008a7c         Code  Gb  vreg_util.o [4]
+?mov_e1_e0              0x008a89         Code  Gb  vreg_util.o [4]
+?mov_e1_e2              0x008a96         Code  Gb  vreg_util.o [4]
+?mov_e2_e0              0x008aa3         Code  Gb  vreg_util.o [4]
+?mov_l0_l1              0x008a6c         Code  Gb  vreg_util.o [4]
+?mov_l0_l2              0x008a79         Code  Gb  vreg_util.o [4]
+?mov_l1_l0              0x008a86         Code  Gb  vreg_util.o [4]
+?mov_l1_l2              0x008a93         Code  Gb  vreg_util.o [4]
+?mov_l2_l0              0x008aa0         Code  Gb  vreg_util.o [4]
+?mov_w0_w1              0x008a26         Code  Gb  vreg_util.o [4]
+?mov_w0_w2              0x008a2d         Code  Gb  vreg_util.o [4]
+?mov_w0_w4              0x008a34         Code  Gb  vreg_util.o [4]
+?mov_w0_w6              0x008a3b         Code  Gb  vreg_util.o [4]
+?mov_w0_w7              0x008a42         Code  Gb  vreg_util.o [4]
+?mov_w1_w0              0x008a49         Code  Gb  vreg_util.o [4]
+?mov_w1_w3              0x008a72         Code  Gb  vreg_util.o [4]
+?mov_w1_w5              0x008a7f         Code  Gb  vreg_util.o [4]
+?mov_w2_w0              0x008a50         Code  Gb  vreg_util.o [4]
+?mov_w3_w1              0x008a8c         Code  Gb  vreg_util.o [4]
+?mov_w3_w5              0x008a99         Code  Gb  vreg_util.o [4]
+?mov_w4_w0              0x008a57         Code  Gb  vreg_util.o [4]
+?mov_w5_w1              0x008aa6         Code  Gb  vreg_util.o [4]
+?mov_w6_w0              0x008a5e         Code  Gb  vreg_util.o [4]
+?mov_w7_w0              0x008a65         Code  Gb  vreg_util.o [4]
+?mul16_x_x_w0           0x0092a5         Code  Gb  short.o [4]
+?mul32_l0_l0_0x         0x008ab0         Code  Gb  long.o [4]
+?mul32_l0_l0_dl         0x008aad         Code  Gb  long.o [4]
+?mul32_l0_l0_l1         0x008ab9         Code  Gb  long.o [4]
+?pop_l0                 0x0089e0         Code  Gb  vreg_util.o [4]
+?pop_l1                 0x0089eb         Code  Gb  vreg_util.o [4]
+?pop_l2                 0x0089f6         Code  Gb  vreg_util.o [4]
+?pop_l3                 0x008a01         Code  Gb  vreg_util.o [4]
+?pop_w4                 0x008992         Code  Gb  vreg_util.o [4]
+?pop_w6                 0x008999         Code  Gb  vreg_util.o [4]
+?pop_w7                 0x0089a0         Code  Gb  vreg_util.o [4]
+?push_l0                0x0089af         Code  Gb  vreg_util.o [4]
+?push_l1                0x0089b4         Code  Gb  vreg_util.o [4]
+?push_l2                0x0089b9         Code  Gb  vreg_util.o [4]
+?push_l3                0x0089be         Code  Gb  vreg_util.o [4]
+?push_w4                0x008970         Code  Gb  vreg_util.o [4]
+?push_w6                0x008975         Code  Gb  vreg_util.o [4]
+?push_w7                0x00897a         Code  Gb  vreg_util.o [4]
+?sdiv16_x_x_y           0x0092c3         Code  Gb  short.o [4]
+?sll32_0x_0x_a          0x008baf         Code  Gb  long.o [4]
+?sll32_l0_l0_a          0x008bac         Code  Gb  long.o [4]
+?smod16_y_x_y           0x0092dc         Code  Gb  short.o [4]
+?srl16_x_x_4            0x0092ef         Code  Gb  short.o [4]
+?srl16_x_x_5            0x0092ee         Code  Gb  short.o [4]
+?srl16_x_x_6            0x0092ed         Code  Gb  short.o [4]
+?srl16_x_x_7            0x0092ec         Code  Gb  short.o [4]
+?srl8_a_a_5             0x009ba9         Code  Gb  char.o [4]
+?srl8_a_a_6             0x009ba8         Code  Gb  char.o [4]
+?udiv32_l0_l0_dl        0x008b3c         Code  Gb  long.o [4]
+?udiv32_l0_l0_l1        0x008b3f         Code  Gb  long.o [4]
+?umod32_l1_l0_dl        0x008b37         Code  Gb  long.o [4]
+?umod32_l1_l0_l1        0x008b3f         Code  Gb  long.o [4]
+?w0                     0x000000         Data  Gb  vregs.o [4]
+?w1                     0x000002         Data  Gb  vregs.o [4]
+?w2                     0x000004         Data  Gb  vregs.o [4]
+?w3                     0x000006         Data  Gb  vregs.o [4]
+?w4                     0x000008         Data  Gb  vregs.o [4]
+?w5                     0x00000a         Data  Gb  vregs.o [4]
+?w6                     0x00000c         Data  Gb  vregs.o [4]
+?w7                     0x00000e         Data  Gb  vregs.o [4]
+ADC1_IRQHandler()       0x009c38    0x1  Code  Gb  stm8s_it.o [1]
+AWU_IRQHandler()        0x009c2a    0x1  Code  Gb  stm8s_it.o [1]
+App::PowerMonitor<Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>, Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>>::Button
+                        0x0000d4    0x1  Data  Gb  main.o [1]
+App::PowerMonitor<Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>, Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>>::CaptureSamples()
+                        0x009498   0x44  Code  Gb  main.o [1]
+App::PowerMonitor<Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>, Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>>::CurrentSamples
+                        0x0000ba    0x4  Data  Gb  main.o [1]
+App::PowerMonitor<Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>, Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>>::DispBuf
+                        0x0000af    0xb  Data  Gb  main.o [1]
+App::PowerMonitor<Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>, Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>>::Init()
+                        0x009ae8    0xd  Code  Gb  main.o [1]
+App::PowerMonitor<Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>, Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>>::Mode
+                        0x000011    0x1  Data  Gb  main.o [1]
+App::PowerMonitor<Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>, Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>>::Power
+                        0x0000a3    0xc  Data  Gb  main.o [1]
+App::PowerMonitor<Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>, Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>>::Run()
+                        0x00866b  0x189  Code  Gb  main.o [1]
+App::PowerMonitor<Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>, Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>>::RunLoop
+                        0x000010    0x1  Data  Gb  main.o [1]
+App::PowerMonitor<Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>, Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>>::SampleCount
+                        0x0000d3    0x1  Data  Gb  main.o [1]
+App::PowerMonitor<Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>, Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>>::SecondTicks()
+                        0x00958b   0x36  Code  Gb  main.o [1]
+App::PowerMonitor<Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>, Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>>::Seconds
+                        0x0000c4    0x2  Data  Gb  main.o [1]
+App::PowerMonitor<Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>, Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>>::UpdateClock()
+                        0x009836   0x23  Code  Gb  main.o [1]
+App::PowerMonitor<Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>, Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>>::UpdateMode()
+                        0x009246   0x5f  Code  Gb  main.o [1]
+App::PowerMonitor<Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>, Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>>::UpdateMode()::string
+                        0x009ac1    0xd  Data  Gb  main.o [1]
+App::PowerMonitor<Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>, Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>>::UpdateMode()::string (instance 2)
+                        0x009c11    0x3  Data  Gb  main.o [1]
+App::PowerMonitor<Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>, Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>>::UpdateMode()::string (instance 3)
+                        0x009c14    0x3  Data  Gb  main.o [1]
+App::PowerMonitor<Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>, Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>>::UpdateMode()::string (instance 4)
+                        0x009c17    0x3  Data  Gb  main.o [1]
+CLK_IRQHandler()        0x009c2b    0x1  Code  Gb  stm8s_it.o [1]
+CSTACK$$Base            0x000300          --   Gb  - Linker created -
+CSTACK$$Limit           0x000400          --   Gb  - Linker created -
+Devices::AT24Cxx<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)160, (unsigned long)16384, (unsigned char)64>::Read(unsigned short, unsigned char __near *, unsigned short)
+                        0x0098a9   0x1d  Code  Gb  main.o [1]
+Devices::AT24Cxx<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)160, (unsigned long)16384, (unsigned char)64>::Read_Write(unsigned short, unsigned char __near *, unsigned short, unsigned char)
+                        0x008dd7   0x98  Code  Gb  main.o [1]
+Devices::AT24Cxx<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)160, (unsigned long)16384, (unsigned char)64>::page_Read(unsigned short, unsigned char __near *, unsigned char)
+                        0x00962a   0x33  Code  Gb  main.o [1]
+Devices::AT24Cxx<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)160, (unsigned long)16384, (unsigned char)64>::page_Write(unsigned short, unsigned char __near *, unsigned char)
+                        0x009554   0x37  Code  Gb  main.o [1]
+Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>::GetBusVoltage_V()
+                        0x009ab3    0xe  Code  Gb  main.o [1]
+Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>::GetBusVoltage_raw()
+                        0x009a41   0x13  Code  Gb  main.o [1]
+Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>::GetCurrent_mA()
+                        0x0096f1   0x2e  Code  Gb  main.o [1]
+Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>::GetCurrent_raw()
+                        0x009aa5    0xe  Code  Gb  main.o [1]
+Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>::HwInit()
+                        0x009ba1    0x7  Code  Gb  main.o [1]
+Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>::ReadRegister(unsigned char)
+                        0x0093c8   0x46  Code  Gb  main.o [1]
+Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>::SetCalibration_16V_400mA()
+                        0x0096c0   0x31  Code  Gb  main.o [1]
+Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>::SetCalibration_32V_2A()
+                        0x00965d   0x32  Code  Gb  main.o [1]
+Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>::WriteRegister(unsigned char, unsigned short)
+                        0x00968f   0x31  Code  Gb  main.o [1]
+Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>::ina219_calValue
+                        0x0000c0    0x2  Data  Gb  main.o [1]
+Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>::ina219_powerDivider_mW
+                        0x0000c2    0x2  Data  Gb  main.o [1]
+Devices::INA219<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)128>::mode
+                        0x0000d2    0x1  Data  Gb  main.o [1]
+Devices::RotaryEncoder<RotApp, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)16, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)32, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)64>::Btn_Hanler::Handler()
+                        0x009be0    0x5  Code  Gb  stm8s_it.o [1]
+Devices::RotaryEncoder<RotApp, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)16, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)32, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)64>::CCW
+                        0x0000d6    0x1  Data  Gb  stm8s_it.o [1]
+Devices::RotaryEncoder<RotApp, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)16, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)32, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)64>::CW_Hanler::Handler()
+                        0x0099f1   0x15  Code  Gb  stm8s_it.o [1]
+Devices::RotaryEncoder<RotApp, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)16, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)32, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)64>::Event
+                        0x0000d5    0x1  Data  Gb  stm8s_it.o [1]
+Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>::Clear()
+                        0x009bdb    0x5  Code  Gb  main.o [1]
+Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>::Cmd(unsigned char)
+                        0x009a77   0x10  Code  Gb  main.o [1]
+Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>::Data(unsigned char)
+                        0x009a66   0x11  Code  Gb  main.o [1]
+Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>::Fill(unsigned char)
+                        0x0094dc   0x40  Code  Gb  main.o [1]
+Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>::Font_Current_address
+                        0x0000be    0x2  Data  Gb  main.o [1]
+Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>::HwInit()
+                        0x008c9c   0xa1  Code  Gb  main.o [1]
+Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>::I2C_Write(unsigned char, unsigned char)
+                        0x00979e   0x28  Code  Gb  main.o [1]
+Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>::Putc_from_eeprom(char, unsigned char, unsigned char)
+                        0x00940e   0x45  Code  Gb  main.o [1]
+Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>::Puts(char __near *, unsigned char, unsigned char, unsigned char)
+                        0x00951c   0x38  Code  Gb  main.o [1]
+Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>::ScreenBuffer
+                        0x000069   0x3a  Data  Gb  main.o [1]
+Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>::SetFont(Devices::font_t)
+                        0x009775   0x29  Code  Gb  main.o [1]
+Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>::UpdateScreen(unsigned char, unsigned char)
+                        0x009382   0x46  Code  Gb  main.o [1]
+Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>::m_BufSize
+                        0x0000d1    0x1  Data  Gb  main.o [1]
+Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>::m_FontHeight
+                        0x0000d0    0x1  Data  Gb  main.o [1]
+Devices::SSD1306<HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>, (unsigned char)120, (bool)1>::m_FontWidth
+                        0x0000cf    0x1  Data  Gb  main.o [1]
+EEPROM_EEC_IRQHandler()
+                        0x009c39    0x1  Code  Gb  stm8s_it.o [1]
+EXTI_PORTA_IRQHandler()
+                        0x009c2c    0x1  Code  Gb  stm8s_it.o [1]
+EXTI_PORTB_IRQHandler()
+                        0x009c2d    0x1  Code  Gb  stm8s_it.o [1]
+EXTI_PORTC_IRQHandler()
+                        0x009c2e    0x1  Code  Gb  stm8s_it.o [1]
+EXTI_PORTD_IRQHandler()
+                        0x009968   0x19  Code  Gb  stm8s_it.o [1]
+EXTI_PORTE_IRQHandler()
+                        0x009c2f    0x1  Code  Gb  stm8s_it.o [1]
+HAL::Gpio::SetInputMode(HAL::Gpio::Port_t, HAL::Gpio::Pin_t, HAL::Gpio::Mode_t)
+                        0x008f05   0x8f  Code  Gb  timers_test.o [1]
+HAL::Gpio::SetOutputMode(HAL::Gpio::Port_t, HAL::Gpio::Pin_t, HAL::Gpio::Mode_t)
+                        0x008f94   0x8a  Code  Gb  main.o [1]
+HAL::GpioIn<(HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)16, (HAL::Gpio::Mode_t)3, (HAL::Gpio::IntEdge_t)2, Devices::RotaryEncoder<RotApp, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)16, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)32, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)64>::CW_Hanler>::IRQ_Handler()
+                        0x009b4f    0xb  Code  Gb  stm8s_it.o [1]
+HAL::GpioIn<(HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)16, (HAL::Gpio::Mode_t)3, (HAL::Gpio::IntEdge_t)2, Devices::RotaryEncoder<RotApp, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)16, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)32, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)64>::CW_Hanler>::Read()
+                        0x009b80    0x9  Code  Gb  stm8s_it.o [1]
+HAL::GpioIn<(HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)32, (HAL::Gpio::Mode_t)2, (HAL::Gpio::IntEdge_t)4, DummyCallback>::Read()
+                        0x009b77    0x9  Code  Gb  stm8s_it.o [1]
+HAL::GpioIn<(HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)32, (HAL::Gpio::Mode_t)2, (HAL::Gpio::IntEdge_t)4, DummyCallback>::operator bool()
+                        0x009b44    0xb  Code  Gb  stm8s_it.o [1]
+HAL::GpioIn<(HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)64, (HAL::Gpio::Mode_t)3, (HAL::Gpio::IntEdge_t)2, Devices::RotaryEncoder<RotApp, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)16, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)32, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)64>::Btn_Hanler>::IRQ_Handler()
+                        0x009b5a    0xb  Code  Gb  stm8s_it.o [1]
+HAL::GpioIn<(HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)64, (HAL::Gpio::Mode_t)3, (HAL::Gpio::IntEdge_t)2, Devices::RotaryEncoder<RotApp, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)16, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)32, (HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)64>::Btn_Hanler>::Read()
+                        0x009b89    0x9  Code  Gb  stm8s_it.o [1]
+HAL::GpioIn<(HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)8, (HAL::Gpio::Mode_t)2, (HAL::Gpio::IntEdge_t)4, DummyCallback>::HwInit()
+                        0x009a96    0xf  Code  Gb  main.o [1]
+HAL::GpioIn<(HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)8, (HAL::Gpio::Mode_t)2, (HAL::Gpio::IntEdge_t)4, DummyCallback>::Read()
+                        0x009b6e    0x9  Code  Gb  main.o [1]
+HAL::GpioIn<(HAL::Gpio::Port_t)20495, (HAL::Gpio::Pin_t)8, (HAL::Gpio::Mode_t)2, (HAL::Gpio::IntEdge_t)4, DummyCallback>::operator bool()
+                        0x009b18    0xb  Code  Gb  main.o [1]
+HAL::GpioOut<(HAL::Gpio::Port_t)20480, (HAL::Gpio::Pin_t)8, (HAL::Gpio::Mode_t)6>::High()
+                        0x009be5    0x5  Code  Gb  timers_test.o [1]
+HAL::GpioOut<(HAL::Gpio::Port_t)20480, (HAL::Gpio::Pin_t)8, (HAL::Gpio::Mode_t)6>::HwInit()
+                        0x009ace    0xd  Code  Gb  main.o [1]
+HAL::GpioOut<(HAL::Gpio::Port_t)20480, (HAL::Gpio::Pin_t)8, (HAL::Gpio::Mode_t)6>::Low()
+                        0x009bea    0x5  Code  Gb  timers_test.o [1]
+HAL::GpioOut<(HAL::Gpio::Port_t)20485, (HAL::Gpio::Pin_t)4, (HAL::Gpio::Mode_t)6>::HwInit()
+                        0x009adb    0xd  Code  Gb  main.o [1]
+HAL::gpt4<(HAL::gpt4_tick_t)6, (unsigned char)249, (unsigned char)0>::GetTicks()
+                        0x009b92    0x8  Code  Gb  main.o [1]
+HAL::gpt4<(HAL::gpt4_tick_t)6, (unsigned char)249, (unsigned char)0>::HwInit()
+                        0x009900   0x1c  Code  Gb  timers_test.o [1]
+HAL::gpt4<(HAL::gpt4_tick_t)6, (unsigned char)249, (unsigned char)0>::IRQ_Handler()
+                        0x009b01    0xc  Code  Gb  stm8s_it.o [1]
+HAL::gpt4<(HAL::gpt4_tick_t)6, (unsigned char)249, (unsigned char)0>::InterruptEnable(unsigned char)
+                        0x009c05    0x4  Code  Gb  main.o [1]
+HAL::gpt4<(HAL::gpt4_tick_t)6, (unsigned char)249, (unsigned char)0>::Start()
+                        0x009bef    0x5  Code  Gb  timers_test.o [1]
+HAL::gpt4<(HAL::gpt4_tick_t)6, (unsigned char)249, (unsigned char)0>::Ticks
+                        0x0000cc    0x2  Data  Gb  stm8s_it.o [1]
+HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>::HwInit()
+                        0x009bfd    0x4  Code  Gb  main.o [1]
+HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>::Rx(unsigned char, unsigned char __near *, unsigned char, unsigned char)
+                        0x009813   0x23  Code  Gb  main.o [1]
+HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>::Stop()
+                        0x009c01    0x4  Code  Gb  main.o [1]
+HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>::Tx(unsigned char __near *, unsigned short)
+                        0x009a2e   0x13  Code  Gb  main.o [1]
+HAL::i2c::Master<HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>>::Tx(unsigned char, unsigned char __near *, unsigned short, unsigned char)
+                        0x00986b   0x20  Code  Gb  main.o [1]
+HAL::i2c::MasterIntr<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::HwInit()
+                        0x009bd6    0x5  Code  Gb  main.o [1]
+HAL::i2c::Poll<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::ClearADDR()
+                        0x009b23    0xb  Code  Gb  main.o [1]
+HAL::i2c::Poll<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::ClearAF()
+                        0x009bd1    0x5  Code  Gb  main.o [1]
+HAL::i2c::Poll<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::ClockEnable()
+                        0x009bae    0x5  Code  Gb  main.o [1]
+HAL::i2c::Poll<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::DisableACK()
+                        0x009bc2    0x5  Code  Gb  main.o [1]
+HAL::i2c::Poll<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::DisablePOS()
+                        0x009bcc    0x5  Code  Gb  main.o [1]
+HAL::i2c::Poll<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::Enable()
+                        0x009bb3    0x5  Code  Gb  main.o [1]
+HAL::i2c::Poll<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::EnableACK()
+                        0x009bbd    0x5  Code  Gb  main.o [1]
+HAL::i2c::Poll<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::EnablePOS()
+                        0x009bc7    0x5  Code  Gb  main.o [1]
+HAL::i2c::Poll<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::GenerateStop()
+                        0x009bb8    0x5  Code  Gb  main.o [1]
+HAL::i2c::Poll<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::HwInit()
+                        0x0095f7   0x33  Code  Gb  main.o [1]
+HAL::i2c::Poll<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::PinsInit()
+                        0x009936   0x19  Code  Gb  main.o [1]
+HAL::i2c::Poll<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::Rx(unsigned char, unsigned char __near *, unsigned char, unsigned char)
+                        0x0087f4  0x17c  Code  Gb  main.o [1]
+HAL::i2c::Poll<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::SendSlaveAddress(unsigned char, unsigned char)
+                        0x009096   0x73  Code  Gb  main.o [1]
+HAL::i2c::Poll<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::Stop()
+                        0x009bf9    0x4  Code  Gb  main.o [1]
+HAL::i2c::Poll<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::Tx(unsigned char __near *, unsigned short)
+                        0x00971f   0x2c  Code  Gb  main.o [1]
+HAL::i2c::Poll<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::Tx(unsigned char)
+                        0x00974b   0x2a  Code  Gb  main.o [1]
+HAL::i2c::Poll<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::Tx(unsigned char, unsigned char __near *, unsigned short, unsigned char)
+                        0x0092f4   0x48  Code  Gb  main.o [1]
+HAL::i2c::Poll<(HAL::i2c::i2c_t)21008, (HAL::i2c::Clk_t)400000>::m_State
+                        0x0000ce    0x1  Data  Gb  main.o [1]
+HAL::pulseIn1<(HAL::Timer1_Channel_t)0, (unsigned short)15, (unsigned short)65535, (HAL::TimerPol_t)0, (unsigned char)34, (unsigned char)0, (unsigned char)0>::pulseIn1()
+                        0x009a87    0xf  Code  Gb  HAL_Objects.o [1]
+I2C_AcknowledgeConfig(I2C_Ack_TypeDef)
+                        0x009453   0x45  Code  Gb  stm8s_i2c.o [1]
+I2C_IRQHandler()        0x009c37    0x1  Code  Gb  stm8s_it.o [1]
+I2C_Init(unsigned long, unsigned short, I2C_DutyCycle_TypeDef, I2C_Ack_TypeDef, I2C_AddMode_TypeDef, unsigned char)
+                        0x00847c  0x1ef  Code  Gb  stm8s_i2c.o [1]
+INTVEC$$Base            0x008000          --   Gb  - Linker created -
+INTVEC$$Limit           0x008080          --   Gb  - Linker created -
+PulseIn                 0x000022   0x47  Data  Gb  HAL_Objects.o [1]
+Region$$Table$$Base     0x009859          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00986b          --   Gb  - Linker created -
+SHT$$INIT_ARRAY$$Base   0x009c0d          --   Gb  - Linker created -
+SHT$$INIT_ARRAY$$Limit  0x009c11          --   Gb  - Linker created -
+SHT$$PREINIT_ARRAY$$Base
+                        0x009c0d          --   Gb  - Linker created -
+SHT$$PREINIT_ARRAY$$Limit
+                        0x009c0d          --   Gb  - Linker created -
+SPI_IRQHandler()        0x009c30    0x1  Code  Gb  stm8s_it.o [1]
+TIM1_CAP_COM_IRQHandler()
+                        0x009c32    0x1  Code  Gb  stm8s_it.o [1]
+TIM1_UPD_OVF_TRG_BRK_IRQHandler()
+                        0x009c31    0x1  Code  Gb  stm8s_it.o [1]
+TIM2_CAP_COM_IRQHandler()
+                        0x009c34    0x1  Code  Gb  stm8s_it.o [1]
+TIM2_UPD_OVF_BRK_IRQHandler()
+                        0x009c33    0x1  Code  Gb  stm8s_it.o [1]
+TIM4_UPD_OVF_IRQHandler()
+                        0x0099b0   0x16  Code  Gb  stm8s_it.o [1]
+TLI_IRQHandler()        0x009c29    0x1  Code  Gb  stm8s_it.o [1]
+TRAP_IRQHandler()       0x009c28    0x1  Code  Gb  stm8s_it.o [1]
+UART1_RX_IRQHandler()   0x009c36    0x1  Code  Gb  stm8s_it.o [1]
+UART1_TX_IRQHandler()   0x009c35    0x1  Code  Gb  stm8s_it.o [1]
+Utils::CountertoTime(unsigned long, char __near *)
+                        0x008d3d   0x9a  Code  Gb  main.o [1]
+Utils::ftoa(float, char __near *, int, char)
+                        0x008e6f   0x96  Code  Lc  main.o [1]
+Utils::intToStr(int, char __near *, int)
+                        0x00917b   0x67  Code  Lc  main.o [1]
+Utils::intToStr(int, char __near *, int, char)
+                        0x009109   0x72  Code  Lc  main.o [1]
+Utils::power(int, unsigned int)
+                        0x0091e2   0x64  Code  Lc  main.o [1]
+Utils::reverse(char __near *, int)
+                        0x00933c   0x46  Code  Lc  main.o [1]
+WaitOnFlag(unsigned char volatile __near *, unsigned char, unsigned char, unsigned short)
+                        0x0097ee   0x25  Code  Gb  system.o [1]
+__DebugBreak            0x009c3a    0x1  Code  Gb  __dbg_break.o [3]
+__call_ctors            0x0098e3   0x1d  Code  Gb  cppinit.o [4]
+__exit                  0x009a1a   0x14  Code  Gb  __dbg_xxexit.o [3]
+__iar_copy_init2        0x0097c6         Code  Gb  init_small.o [4]
+__iar_cstart_call_ctors
+                        0x0098d3         Code  Gb  cstartup.o [4]
+__iar_data_init2        0x009a06   0x14  Code  Gb  init.o [4]
+__iar_program_start     0x0098c6         Code  Gb  cstartup.o [4]
+__iar_unhandled_exception
+                        0x009c23         Code  Gb  unhandled_exception.o [4]
+__iar_zero_init2        0x00988b         Code  Gb  init_small.o [4]
+__intvec                0x008000         Data  Gb  interrupt.o [4]
+__low_level_init        0x009c1d    0x3  Code  Gb  low_level_init.o [4]
+__sti__routine          0x009b9a    0x7  Code  Lc  HAL_Objects.o [1]
+__sti__routine          0x0099dc   0x15  Code  Lc  main.o [1]
+_exit                   0x009bf4         Code  Gb  cexit.o [4]
+_interrupt_1            0x009c28         Code  Gb  stm8s_it.o [1]
+_interrupt_12           0x009c30         Code  Gb  stm8s_it.o [1]
+_interrupt_13           0x009c31         Code  Gb  stm8s_it.o [1]
+_interrupt_14           0x009c32         Code  Gb  stm8s_it.o [1]
+_interrupt_15           0x009c33         Code  Gb  stm8s_it.o [1]
+_interrupt_16           0x009c34         Code  Gb  stm8s_it.o [1]
+_interrupt_19           0x009c35         Code  Gb  stm8s_it.o [1]
+_interrupt_2            0x009c29         Code  Gb  stm8s_it.o [1]
+_interrupt_20           0x009c36         Code  Gb  stm8s_it.o [1]
+_interrupt_21           0x009c37         Code  Gb  stm8s_it.o [1]
+_interrupt_24           0x009c38         Code  Gb  stm8s_it.o [1]
+_interrupt_25           0x0099b0         Code  Gb  stm8s_it.o [1]
+_interrupt_26           0x009c39         Code  Gb  stm8s_it.o [1]
+_interrupt_3            0x009c2a         Code  Gb  stm8s_it.o [1]
+_interrupt_4            0x009c2b         Code  Gb  stm8s_it.o [1]
+_interrupt_5            0x009c2c         Code  Gb  stm8s_it.o [1]
+_interrupt_6            0x009c2d         Code  Gb  stm8s_it.o [1]
+_interrupt_7            0x009c2e         Code  Gb  stm8s_it.o [1]
+_interrupt_8            0x009968         Code  Gb  stm8s_it.o [1]
+_interrupt_9            0x009c2f         Code  Gb  stm8s_it.o [1]
+assert_failed(unsigned char __near *, unsigned long)
+                        0x009c26    0x2  Code  Gb  main.o [1]
+delay(unsigned int)     0x009999   0x17  Code  Lc  system.o [1]
+delay_ms(unsigned int)  0x00991c   0x1a  Code  Gb  system.o [1]
+example<int __near &, test>::example(int __near &)
+                        0x009b2e    0xb  Code  Gb  main.o [1]
+example<int __near *, (&test)>::example(int __near *)
+                        0x009b39    0xb  Code  Gb  main.o [1]
+exit                    0x009c20    0x3  Code  Gb  exit.o [4]
+int_example             0x0000c8    0x2  Data  Gb  main.o [1]
+int_ref_example         0x0000ca    0x2  Data  Gb  main.o [1]
+main                    0x00994f   0x19  Code  Gb  main.o [1]
+memset                  0x0099c6   0x16  Code  Gb  memset.o [4]
+platform::SoftwareTimers<HAL::gpt4<(HAL::gpt4_tick_t)6, (unsigned char)249, (unsigned char)0>, (unsigned char)3>::Init()
+                        0x009af5    0xc  Code  Gb  main.o [1]
+platform::SoftwareTimers<HAL::gpt4<(HAL::gpt4_tick_t)6, (unsigned char)249, (unsigned char)0>, (unsigned char)3>::Run()
+                        0x008bbd   0xdf  Code  Gb  main.o [1]
+platform::SoftwareTimers<HAL::gpt4<(HAL::gpt4_tick_t)6, (unsigned char)249, (unsigned char)0>, (unsigned char)3>::Ticks()
+                        0x009c09    0x4  Code  Gb  main.o [1]
+platform::SoftwareTimers<HAL::gpt4<(HAL::gpt4_tick_t)6, (unsigned char)249, (unsigned char)0>, (unsigned char)3>::Timers
+                        0x000012   0x10  Data  Gb  main.o [1]
+queue<unsigned short, unsigned char, (unsigned long)34>::queue()
+                        0x009b0d    0xb  Code  Gb  HAL_Objects.o [1]
+test                    0x0000c6    0x2  Data  Gb  main.o [1]
+unsigned char const & min<unsigned char>(unsigned char const &, unsigned char const &)
+                        0x009b65    0x9  Code  Gb  main.o [1]
+
+
+[1] = C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP -Moving toSTM8L151G6U6\IDE\Debug\Obj
+[2] = command line
+[3] = dbgstm8smd.a
+[4] = dlstm8smn.a
+
+  6 917 bytes of readonly  code memory
+    310 bytes of readonly  data memory
+    471 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
