@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<settings>
+    <Stack>
+        <FillEnabled>0</FillEnabled>
+        <OverflowWarningsEnabled>1</OverflowWarningsEnabled>
+        <WarningThreshold>90</WarningThreshold>
+        <SpWarningsEnabled>1</SpWarningsEnabled>
+        <WarnLogOnly>1</WarnLogOnly>
+        <UseTrigger>1</UseTrigger>
+        <TriggerName>main</TriggerName>
+        <LimitSize>0</LimitSize>
+        <ByteLimit>50</ByteLimit>
+    </Stack>
+    <Trace1>
+        <Enabled>0</Enabled>
+        <ShowSource>1</ShowSource>
+    </Trace1>
+    <DebugChecksum>
+        <Checksum>1382465631</Checksum>
+    </DebugChecksum>
+    <Disassembly>
+        <InstrCount>0</InstrCount>
+        <MixedMode>1</MixedMode>
+    </Disassembly>
+    <CodeCoverage>
+        <Enabled>0</Enabled>
+        <ShowSource>0</ShowSource>
+        <HideCovered>0</HideCovered>
+    </CodeCoverage>
+    <CallStack>
+        <ShowArgs>0</ShowArgs>
+    </CallStack>
+    <DriverProfiling>
+        <Enabled>0</Enabled>
+        <Mode>1</Mode>
+        <Graph>0</Graph>
+        <Symbiont>0</Symbiont>
+    </DriverProfiling>
+    <CallStackLog>
+        <Enabled>0</Enabled>
+    </CallStackLog>
+    <CallStackStripe>
+        <ShowTiming>1</ShowTiming>
+    </CallStackStripe>
+    <InterruptLog>
+        <LogEnabled>0</LogEnabled>
+        <GraphEnabled>0</GraphEnabled>
+        <ShowTimeLog>1</ShowTimeLog>
+        <SumEnabled>0</SumEnabled>
+        <ShowTimeSum>1</ShowTimeSum>
+        <SumSortOrder>0</SumSortOrder>
+    </InterruptLog>
+    <DataLog>
+        <LogEnabled>0</LogEnabled>
+        <GraphEnabled>0</GraphEnabled>
+        <ShowTimeLog>1</ShowTimeLog>
+        <SumEnabled>0</SumEnabled>
+        <ShowTimeSum>1</ShowTimeSum>
+    </DataLog>
+    <Breakpoints2>
+        <Count>0</Count>
+    </Breakpoints2>
+    <Interrupts>
+        <Enabled>1</Enabled>
+    </Interrupts>
+    <MemConfig>
+        <Base>1</Base>
+        <Manual>0</Manual>
+        <Ddf>1</Ddf>
+        <TypeViol>0</TypeViol>
+        <Stop>1</Stop>
+    </MemConfig>
+    <Simulator>
+        <Freq>16000000</Freq>
+        <FreqHi>0</FreqHi>
+        <MultiCoreRunAll>1</MultiCoreRunAll>
+    </Simulator>
+    <BreakpointUsageDialog>
+        <Placement>_ 1058 559 1503 842</Placement>
+    </BreakpointUsageDialog>
+    <array_types>
+        <Fmt0>uint8_t[3]	3	0</Fmt0>
+        <Fmt1>uint8_t[64]	5	0</Fmt1>
+        <Fmt2>uint8_t[66]	5	0</Fmt2>
+    </array_types>
+    <watch_formats>
+        <Fmt0>{W}42:AWD_Val	3	0</Fmt0>
+        <Fmt1>{W}42:AdcVal	3	0</Fmt1>
+        <Fmt2>{W}42:Results	4	0</Fmt2>
+        <Fmt3>{W}42:Ticks	3	4</Fmt3>
+        <Fmt4>{W}42:ticks	3	0</Fmt4>
+    </watch_formats>
+    <DataSample>
+        <LogEnabled>0</LogEnabled>
+        <GraphEnabled>0</GraphEnabled>
+        <ShowTimeLog>1</ShowTimeLog>
+    </DataSample>
+    <TermIOLog>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+    </TermIOLog>
+    <LogFile>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+        <Category>_ 0</Category>
+    </LogFile>
+    <Breakpoints>
+        <Bp0>_ "STD_CODE" "{$PROJ_DIR$\tests\i2c\i2c_tests.cpp}.134.7" 0 0 0 0 "" 0 ""</Bp0>
+        <Bp1>_ "STD_CODE" "{$PROJ_DIR$\Devices\Oled\SD1306.h}.0.1" 0 0 0 0 "" 0 ""</Bp1>
+        <Bp2>_ "STD_CODE" "{$PROJ_DIR$\Devices\Oled\SD1306.h}.0.1" 0 0 0 0 "" 0 ""</Bp2>
+        <Count>3</Count>
+    </Breakpoints>
+    <Aliases>
+        <A0>_ "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP - Oled - apis_NotWorking\Devices\Rotary Encoder\RotaryEncoder.h" ""</A0>
+        <A1>_ "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP - Oled - apis_NotWorking\system\stm8s_it.c" ""</A1>
+        <A2>_ "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP - Oled - apis_NotWorking\system\system.c" ""</A2>
+        <A3>_ "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP - Oled - str wrking font tmplate\app\main.c" ""</A3>
+        <A4>_ "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP - PowerMoniotor oled eeprom\Devices\INA219\INA219.h" ""</A4>
+        <A5>_ "C:\Amit_Chaudhary\STM8\STM8S103F3P6\Cobe\STM8S103F3P6_CPP - config Fonts\STM8S_StdPeriph_Driver\src\stm8s_i2c.c" ""</A5>
+        <Count>6</Count>
+        <SuppressDialog>0</SuppressDialog>
+    </Aliases>
+    <DebuggerSettings>
+        <DisableInterruptsWhenStepping>0</DisableInterruptsWhenStepping>
+        <LeaveTargetRunning>1</LeaveTargetRunning>
+    </DebuggerSettings>
+</settings>
